@@ -2,15 +2,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        gdark: "#12161B",
-        glight: "#252A33",
-        header: "#191f27",
-        card: "#1f242c",
-        "card-accent": "#272c35",
-        accent: "#899cb1",
-        text: "#cdd3d5",
-        "text-secondary": "#878d91",
-        "text-tertiary": "#393f44",
+        // exact values from Tropical that he used in the mockup
+        gradt: "#11151a",
+        gradb: "#2c323c",
+        accent: "#52789e",
+        navbg: "#191f27",
+        navfg: "#a5bcd3",
+        card: "hsl(198deg, 8%, 82%)",
+
+        // old ones colour picked from the image
+        cardbg: "#1f242c",
+        cardbgalt: "#272c35",
+        secondary: "#878d91",
         blurple: "#52789e"
       },
     },
