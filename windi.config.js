@@ -10,16 +10,17 @@ export default {
         navfg: "#a5bcd3",
         card: "hsl(198deg, 8%, 82%)",
 
-        // old ones colour picked from the image
+        // misc
         cardbg: "#1f242c",
         cardbgalt: "#272c35",
         secondary: "#878d91",
-        blurple: "#52789e"
+        blurple: "#52789e",
+        subtitle: "#485057",
+        hero: "#899cb1",
       },
     },
     fontFamily: {
-      mono: ["Jetbrains Mono", "monospace"],
-      hero: ["Nova Mono", "Jetbrains Mono", "monospace"],
+      mono: ["Cascadia Mono", "monospace"],
     },
   },
 };
