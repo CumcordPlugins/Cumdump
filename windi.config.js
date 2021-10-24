@@ -17,6 +17,9 @@ export default {
         subtitle: "#485057",
         hero: "#899cb1",
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
     fontFamily: {
       mono: ["Cascadia Mono", "monospace"],
