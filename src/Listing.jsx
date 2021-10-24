@@ -37,7 +37,7 @@ export default () => {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 mb-4 md:mx-20 mx-2">
         {plugins.loading && "Loading plugins..."}
         {plugins.error ?? []}
-        {fuzzy(plugins(), ["name", "author"], search())?.map((plugin) => (
+        {fuzzy(plugins(), search())?.map((plugin) => (
           <PluginCard plugin={plugin} />
         )) ?? []}
       </div>
