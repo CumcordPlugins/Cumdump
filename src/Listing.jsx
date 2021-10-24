@@ -7,7 +7,7 @@ async function getPlugins() {
   const pluginsRaw = await (await fetch(repo)).json();
   const plugins = Object.keys(pluginsRaw).map((key) => {
     let plugin = pluginsRaw[key];
-    plugin.url = key;
+    plugin.url = new URL(key, repo).href;
     return plugin;
   });
   return plugins;
@@ -28,7 +28,7 @@ export default () => {
         {plugins()?.map((plugin) => <PluginCard plugin={plugin} />) ?? []}
       </div>
 
-      <iframe class="hidden" id="teledildonic" />
+      <iframe class="h-0" id="teledildonic" />
     </div>
   );
 };
