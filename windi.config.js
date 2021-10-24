@@ -13,7 +13,6 @@ export default {
         // misc
         cardbg: "#1f242c",
         cardbgalt: "#272c35",
-        secondary: "#878d91",
         blurple: "#52789e",
         subtitle: "#485057",
         hero: "#899cb1",
