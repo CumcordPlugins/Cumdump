@@ -11,6 +11,11 @@ function App() {
       <Header />
       <Hero />
       <Listing />
+
+      <div class="text-right text-subtitle italic m-4">
+        <p class="inline">Made with &lt;3 by the Cumcord Team</p>
+        <p class="inline-block ml-2"> // Design by Tropical</p>
+      </div>
     </div>
   );
 }
