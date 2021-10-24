@@ -24,7 +24,7 @@ export default () => {
     <div>
       <div class="flex justify-center">
         <input
-          class="h-16 mb-10 mx-2 p-4 w-120 flex-1 md:flex-none bg-cardbg border border-black shadow-md"
+          class="h-16 mb-10 mx-4 p-4 w-120 flex-1 md:flex-none bg-cardbg border border-black shadow-md"
           placeholder="Search Plugins..."
           type="text"
           value={search()}
@@ -34,7 +34,7 @@ export default () => {
         />
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 md:mx-20 mx-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 md:mx-20 mx-4">
         {plugins.loading && "Loading plugins..."}
         {plugins.error ?? []}
         {fuzzy(plugins(), search())?.map((plugin) => (

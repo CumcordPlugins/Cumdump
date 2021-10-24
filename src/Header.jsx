@@ -3,7 +3,7 @@ import condomimg from "./assets/condom.png";
 import cumcordimg from "./assets/cumcord.png";
 
 export default () => (
-  <div class="flex <md:justify-center justify-between bg-navbg text-navfg w-full px-24 py-4 shadow-md mb-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center bg-navbg text-navfg w-full px-24 py-4 shadow-md mb-4">
     <div>
       <img src={condomimg} class="inline h-6 mr-2 rounded" />
       <p class="inline">cumdump</p>
@@ -15,7 +15,7 @@ export default () => (
         /* sorry so much about this class mess */
         class="rounded transition-all duration-250 opacity-0 -mr-6 w-0 h-0 group-hover:(opacity-100 mr-2 w-6 h-6) group-focus:(opacity-100 mr-2 w-6 h-6)"
       />
-      Back to cumcord
+      back to cumcord
     </a>
 
     <a href="https://github.com/Cumcord" target="_blank">
