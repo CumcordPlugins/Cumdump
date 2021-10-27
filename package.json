@@ -8,7 +8,7 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "license": "MIT",
+  "license": "Unlicense",
   "devDependencies": {
     "vite": "^2.5.7",
     "vite-plugin-solid": "^2.0.3",
