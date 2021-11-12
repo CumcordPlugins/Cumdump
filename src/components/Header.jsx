@@ -1,6 +1,6 @@
 import Github from "./Github.jsx";
-import condomimg from "./assets/condom.png";
-import cumcordimg from "./assets/cumcord.png";
+import condomimg from "../assets/condom.png";
+import cumcordimg from "../assets/cumcord.png";
 
 export default () => (
   <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center bg-navbg text-navfg w-full px-24 py-4 shadow-md mb-4">

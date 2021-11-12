@@ -1,18 +1,7 @@
 import { createSignal, createResource } from "solid-js";
 import PluginCard from "./PluginCard.jsx";
-import fuzzy from "./fuzzy.js";
-
-const repo = "https://cumcordplugins.github.io/Condom/plugins-large.json";
-
-async function getPlugins() {
-  const pluginsRaw = await (await fetch(repo)).json();
-  const plugins = Object.keys(pluginsRaw).map((key) => {
-    let plugin = pluginsRaw[key];
-    plugin.url = new URL(key, repo).href;
-    return plugin;
-  });
-  return plugins;
-}
+import fuzzy from "../fuzzy.js";
+import getPlugins from "../repoFetcher.js";
 
 export default () => {
   const [search, setSearch] = createSignal("");
