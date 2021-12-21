@@ -8,8 +8,6 @@ export default ({ url, hash }) => (
         css.innerText = "";
       }, 2000);
 
-      navigator.clipboard.writeText(url);
-
       let iframe = document.getElementById("teledildonic");
       // this can be literally anything, gets around not reloading due to only difference being #
       iframe.src = "cum";
