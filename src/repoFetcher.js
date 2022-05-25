@@ -1,7 +1,10 @@
 const repo = "https://cumcordplugins.github.io/Condom/plugins-large.json";
 
-export default async () => (await (await fetch(repo)).json()).reverse().map(plugin => {
-  plugin.url = new URL(plugin.url, repo).href;
-
-  return plugin;
-});
+export default () =>
+  fetch(repo)
+    .then((r) => r.json())
+    .then((plugins) =>
+      plugins
+        .reverse()
+        .map((p) => ({ ...p, url: new URL(p.url, repo).href }))
+    );
